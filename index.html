@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body id="Home">
     <header>
       <nav class="navbar">
         <div class="brand-title">NIKKI'S</div>
@@ -43,12 +43,12 @@
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Look Book</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Lookbook">Look Book</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -69,7 +69,7 @@
       </section>
     </section>
 
-    <section class="section-one">
+    <section class="section-one" id="Services">
       <section>
         <img src="images/quality-icon-01.png" alt="beauty icons" />
         <h3>EXPERT BEAUTICIANS</h3>
@@ -100,7 +100,7 @@
       </section>
     </section>
 
-    <section class="section-two">
+    <section class="section-two" id="News">
       <section class="text-two">
         <h2>MAKE YOUR <br />OWN MOMENTUM</h2>
         <p>
@@ -116,7 +116,7 @@
       </section>
     </section>
 
-    <section class="section-three">
+    <section class="section-three" id="About">
       <h2>OUR STYLERS</h2>
       <div class="border-bottom"></div>
       <section class="flex-three">
@@ -165,7 +165,7 @@
       </section>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="Lookbook">
       <h2>OUR LOOKBOOK</h2>
       <div class="border-bottom"></div>
 
@@ -195,6 +195,50 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer" id="Contact">
+      <div class="container-foot">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">our locations</a></li>
+              <li><a href="#">privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Online shop</h4>
+            <ul>
+              <li><a href="#">makeup products</a></li>
+              <li><a href="#">hair products</a></li>
+              <li><a href="#">beauty equipments</a></li>
+              <li><a href="#">hire a stylist</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script type="text/javascript" src="js/main.js"></script>
   </body>

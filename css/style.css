@@ -28,9 +28,7 @@ body {
   font-family: "Cinzel", serif;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
+/****************HEADER SECTION*****************/
 
 .navbar {
   display: flex;
@@ -38,6 +36,7 @@ body {
   align-items: center;
   background-color: white;
   color: rgb(248, 17, 56);
+
   /*position: fixed;
   width: 100%;
   top: 0;*/
@@ -138,10 +137,12 @@ h1 {
   color: whitesmoke;
   transition: 0.5s;
 }
+
+/*********************CARD***********/
 .overlay {
   position: absolute;
   left: 10rem;
-  top: 57rem;
+  top: 53rem;
   background: rgb(0, 0, 0);
   width: 24rem;
   height: 25rem;
@@ -178,14 +179,14 @@ h1 {
   top: 2.5rem;
   left: 4.5rem;
 }
-/*---------section one-------*/
+/*---------**********SECTION ONE***********-------*/
 .section-one {
   display: flex;
   justify-content: space-around;
   text-align: center;
   margin: 0 5%;
   position: relative;
-  top: 12.5rem;
+  top: 20rem;
 }
 .section-one section {
   flex-basis: 30%;
@@ -204,7 +205,7 @@ section > .img-icon {
   color: rgb(248, 17, 56);
 }
 
-/*--------------------section two------------*/
+/*--------------------SECTION 2------------*/
 .section-two {
   display: flex;
   justify-content: space-around;
@@ -212,7 +213,7 @@ section > .img-icon {
   width: 100%;
   height: 45rem;
   position: relative;
-  top: 20rem;
+  top: 30rem;
 }
 .img-two {
   flex-basis: 45%;
@@ -254,11 +255,11 @@ section > .img-icon {
   right: 1.875rem;
 }
 
-/*--------section three------------*/
+/*--------*********SECTION THREE*********------------*/
 .section-three {
   margin: 0 7%;
   position: relative;
-  top: 25rem;
+  top: 37rem;
 }
 .section-three h2 {
   text-align: center;
@@ -303,7 +304,7 @@ section > .img-icon {
   position: relative;
   bottom: 1.25rem;
 }
-/*-------section four-----*/
+/************************SECTION 4*******************/
 
 .promo {
   display: flex;
@@ -312,7 +313,7 @@ section > .img-icon {
   height: 35rem;
   margin: 0 4rem;
   position: relative;
-  top: 35rem;
+  top: 52rem;
 }
 .img-promo {
   flex-basis: 40%;
@@ -349,11 +350,11 @@ section > .img-icon {
   font-weight: 700;
 }
 
-/*--------------last section-----------*/
+/**********************SECTION 5********************/
 
 .gallery {
   position: relative;
-  top: 45rem;
+  top: 63rem;
 }
 .gallery h2 {
   text-align: center;
@@ -403,16 +404,15 @@ section > .img-icon {
   text-decoration: none;
 }
 
-.img-gallery a i {
-  color: rgba(255, 255, 255, 0.6);
+.img-gallery a ion-icon {
+  color: rgb(133, 130, 130);
   font-size: 3rem;
   position: relative;
   z-index: 100;
-  padding: 1rem 3rem;
   border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 0.4rem;
-  /* opacity: 0; 
-  transition: opacity 0.5s; */
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 .img-gallery a::before {
   content: "";
@@ -425,7 +425,7 @@ section > .img-icon {
   opacity: 0;
   transition: opacity 0.5s;
 }
-.img-gallery a:hover i,
+.img-gallery a:hover ion-icon,
 .img-gallery a:hover::before {
   opacity: 1;
 }
@@ -457,21 +457,111 @@ section > .img-icon {
   min-height: 51.5rem;
   background-image: url(../images/braudsfine.jpg);
 }
+
+/************************FOOTER*****************/
+.footer {
+  position: relative;
+  top: 70rem;
+  background-color: rgb(255, 255, 255);
+  padding: 70px 0;
+  font-family: sans-serif, Helvetica, serif;
+  line-height: 1.5;
+}
+.container-foot {
+  max-width: 1170px;
+  margin: auto;
+}
+.footer-col ul {
+  list-style-type: none;
+}
+.footer-col ul li {
+  position: relative;
+  right: 3.5rem;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer ul li a {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #a39f9f;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer ul li a:hover {
+  color: rgb(58, 172, 216);
+  padding-left: 8px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 2rem;
+  color: #0a0909;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 400;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(248, 17, 56);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.fa {
+  font-size: 1.5rem;
+}
+.footer-col .social-links a:hover {
+  color: rgb(245, 6, 65);
+  background-color: #24262b;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
-/* @media screen and (max-width: 900px) {
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+/*********************BIG SIZE***********************/
+@media (min-width: 651px) and (max-width: 1120px) {
   .header {
     min-height: 70vh;
-    bottom: 5.5rem;
+    bottom: 3.5rem;
   }
   h1 {
     font-size: 4.5rem;
   }
   .header .image-text {
     position: relative;
-    top: 30rem;
+    top: 25rem;
   }
   .image-text p {
     font-size: 1.3rem;
@@ -485,7 +575,7 @@ section > .img-icon {
   }
   .overlay {
     left: 1.875rem;
-    top: 40rem;
+    top: 36rem;
     width: 20rem;
     height: 20rem;
   }
@@ -509,7 +599,7 @@ section > .img-icon {
     left: 3rem;
   }
   .section-one {
-    top: 12rem;
+    top: 15rem;
   }
   .section-two {
     height: 37rem;
@@ -528,7 +618,7 @@ section > .img-icon {
     padding: 0.625rem 1.25rem;
   }
   .img-two img {
-    width: 30rem;
+    width: 100%;
     height: 25rem;
     right: 0;
   }
@@ -536,10 +626,12 @@ section > .img-icon {
   .img-two {
     margin: 0 2%;
     top: 5rem;
+    left: 0;
   }
   .text-two {
     margin: 0 2%;
     top: 2rem;
+    left: 0;
   }
   .section-three {
     top: 25rem;
@@ -569,47 +661,40 @@ section > .img-icon {
   .caption span {
     bottom: 0.3125rem;
   }
-
   .promo {
-    height: 21.875rem;
-    margin: 0 3%;
-    top: 27rem;
-    left: 3rem;
+    margin: 0;
+    top: 35rem;
   }
-  .color-promo {
-    left: 0;
-  }
+
   .img-promo img {
-    width: 40%;
-    height: 21.5625rem;
-    left: 37rem;
-    bottom: 10.625rem;
+    width: 100%;
+    height: 32rem;
   }
-  .color-promo h2,
-  .color-promo h3,
-  .color-promo a {
-    top: 5rem;
-    left: 2rem;
-  }
+
   .color-promo h3 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: rgb(32, 135, 176);
+    font-size: 2.2rem;
   }
   .color-promo h2 {
     font-size: 2.5rem;
-    line-height: 4.5rem;
+    font-weight: 500;
+    line-height: 5rem;
   }
   .color-promo a {
-    position: relative;
-    top: 5.625rem;
-    text-decoration: none;
-
-    padding: 0.875rem 1.5625rem;
+    top: 2rem;
+  }
+  .gallery {
+    top: 40rem;
   }
 }
-/**************** SMALLER SCREEN ***********/
-@media screen and (max-width: 400px) {
+/**************** SMALL SCREEN ***********/
+@media screen and (max-width: 450px) {
+  .footer-col {
+    width: 100%;
+  }
+  .footer {
+    top: 60rem;
+    padding: 30px 0;
+  }
   .toggle-button {
     display: flex;
   }
@@ -659,31 +744,7 @@ section > .img-icon {
   }
   .overlay {
     display: none;
-    /*left: 1.875rem;
-    top: 40rem;
-    width: 20rem;
-    height: 20rem;*/
   }
-
-  /* .overlay h4 {
-    font-size: 1.6rem;
-    text-align: center;
-    top: 0;
-    left: 0;
-  }
-  .overlay h3 {
-    font-size: 1.6rem;
-    line-height: 3rem;
-    top: 0.3125rem;
-    left: 0.9375rem;
-  }
-
-  .overlay a {
-    padding: 0.625rem 1.25rem;
-    position: relative;
-    top: 0;
-    left: 3rem;
-  } */
   .section-one {
     flex-direction: column;
     top: 3rem;
@@ -740,10 +801,12 @@ section > .img-icon {
   }
   .flex-three {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     top: 2rem;
   }
   .workers img {
-    width: 100%;
+    width: 98%;
     height: 35rem;
   }
   .caption {
@@ -829,7 +892,11 @@ section > .img-icon {
     min-height: 25rem;
   }
 }
-@media (min-width: 401px) and (max-width: 650px) {
+@media (min-width: 451px) and (max-width: 650px) {
+  .footer {
+    top: 70rem;
+    padding: 30px 0;
+  }
   .toggle-button {
     display: flex;
   }
@@ -861,10 +928,10 @@ section > .img-icon {
     bottom: 2rem;
   }
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .header .image-text {
-    top: 24rem;
+    top: 22rem;
   }
   .image-text p {
     font-size: 1.2rem;
@@ -990,11 +1057,11 @@ section > .img-icon {
   }
   .color-promo a {
     top: 1rem;
-    padding: 1.5rem 3.5rem;
+    padding: 1.5rem 3rem;
     font-weight: 600;
   }
   .gallery {
-    top: 60rem;
+    top: 65rem;
   }
   .gallery h2 {
     font-size: 3.5rem;
@@ -1015,5 +1082,9 @@ section > .img-icon {
 
   .img-6 {
     min-height: 25rem;
+  }
+  .footer {
+    top: 73rem;
+    padding: 30px 0;
   }
 }
