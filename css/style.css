@@ -221,6 +221,7 @@ section > .img-icon {
   top: 7rem;
   left: 5rem;
 }
+
 .text-two {
   flex-basis: 45%;
   position: relative;
@@ -432,7 +433,7 @@ section > .img-icon {
 .img-1 {
   grid-area: img-1;
 
-  background-image: url(../images/girl1.jpg);
+  background-image: url(../images/braids2.jpg);
 }
 .img-2 {
   grid-area: img-2;
