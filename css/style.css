@@ -1,0 +1,1019 @@
+/* Box Model Hack  */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Cinzel", serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: rgb(248, 17, 56);
+  /*position: fixed;
+  width: 100%;
+  top: 0;*/
+}
+.brand-title {
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  margin: 0.5rem;
+  color: rgb(248, 17, 56);
+  text-shadow: 0 1px 0 #f52245, 0 2px 0 #f93253, 0 3px 0 #fe0630,
+    0 4px 0 #fb607a, 0 5px 0 #f04f6a, 0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar-links li {
+  list-style-type: none;
+}
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 1.5rem 2rem;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.navbar-links li:hover {
+  background-color: rgb(248, 17, 56, 0.7);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(248, 17, 56);
+  border-radius: 10px;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/ayo-ogunseinde-RrD8ypt8cjY-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgb(248, 17, 56);
+  position: relative;
+  bottom: 5.3rem;
+}
+h1 {
+  font-size: 8rem;
+  font-weight: 550;
+  font-family: "Cinzel Decorative", cursive;
+}
+.header .image-text {
+  text-align: center;
+  position: relative;
+  top: 38rem;
+}
+.image-text p {
+  color: black;
+  font-weight: 600;
+  font-size: 2rem;
+  position: relative;
+  bottom: 3.5rem;
+  letter-spacing: 0.3rem;
+}
+.image-text a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  background: rgb(248, 17, 56);
+  padding: 2rem 4.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  position: relative;
+  bottom: 0.9375rem;
+}
+.effect:hover {
+  background-color: #700617;
+  color: whitesmoke;
+  transition: 0.5s;
+}
+.overlay {
+  position: absolute;
+  left: 10rem;
+  top: 57rem;
+  background: rgb(0, 0, 0);
+  width: 24rem;
+  height: 25rem;
+  color: rgb(248, 17, 56);
+}
+.overlay h4 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  position: relative;
+  top: 1.25rem;
+  left: 2rem;
+}
+.overlay h3 {
+  font-size: 1.8rem;
+  line-height: 4rem;
+  font-weight: 600;
+  position: relative;
+  top: 0.9375rem;
+  left: 2rem;
+}
+.overlay span {
+  font-size: 3rem;
+}
+.overlay a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border: 1px solid rgb(41, 41, 41);
+  background: rgb(248, 17, 56);
+  padding: 0.9375rem 1.875rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  position: relative;
+  top: 2.5rem;
+  left: 4.5rem;
+}
+/*---------section one-------*/
+.section-one {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 5%;
+  position: relative;
+  top: 12.5rem;
+}
+.section-one section {
+  flex-basis: 30%;
+  word-wrap: break-word;
+  margin: 0 5px;
+  color: rgb(41, 41, 41);
+}
+.section-one h3 {
+  font-size: 1.8rem;
+}
+.section-one p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+section > .img-icon {
+  color: rgb(248, 17, 56);
+}
+
+/*--------------------section two------------*/
+.section-two {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(252, 251, 251);
+  width: 100%;
+  height: 45rem;
+  position: relative;
+  top: 20rem;
+}
+.img-two {
+  flex-basis: 45%;
+  position: relative;
+  top: 7rem;
+  left: 5rem;
+}
+.text-two {
+  flex-basis: 45%;
+  position: relative;
+  top: 1.25rem;
+  left: 5rem;
+}
+.section-two h2 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 6rem;
+  color: rgb(58, 172, 216);
+}
+.section-two p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  position: relative;
+  bottom: 1.25rem;
+}
+.section-two a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  background: rgb(248, 17, 56);
+  padding: 1.5rem 4.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.img-two img {
+  height: 30rem;
+  position: relative;
+  right: 1.875rem;
+}
+
+/*--------section three------------*/
+.section-three {
+  margin: 0 7%;
+  position: relative;
+  top: 25rem;
+}
+.section-three h2 {
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: rgb(248, 17, 56);
+}
+.border-bottom {
+  border-bottom: 4px solid black;
+  width: 3%;
+  margin: 0 48%;
+  position: relative;
+  bottom: 1.25rem;
+}
+.flex-three {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 4.5rem;
+}
+.flex-three .workers {
+  flex-basis: 23%;
+}
+.workers img {
+  width: 100%;
+}
+
+.caption {
+  text-align: center;
+  position: relative;
+  right: 0.9375rem;
+}
+.caption h4 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: rgb(32, 135, 176);
+}
+.caption span {
+  color: rgb(245, 6, 65);
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  bottom: 1.25rem;
+}
+/*-------section four-----*/
+
+.promo {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  height: 35rem;
+  margin: 0 4rem;
+  position: relative;
+  top: 35rem;
+}
+.img-promo {
+  flex-basis: 40%;
+  position: relative;
+}
+.img-promo img {
+  width: 100%;
+  height: 35rem;
+}
+.color-promo {
+  flex-basis: 50%;
+  position: relative;
+  top: 5rem;
+}
+.color-promo h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: rgb(32, 135, 176);
+}
+.color-promo h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 6rem;
+}
+.color-promo a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  background: rgb(248, 17, 56);
+  padding: 2rem 4.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/*--------------last section-----------*/
+
+.gallery {
+  position: relative;
+  top: 45rem;
+}
+.gallery h2 {
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: rgb(245, 6, 65);
+}
+.borderbottom {
+  border-bottom: 4px solid black;
+  width: 2.5%;
+  margin: 0 48%;
+  position: relative;
+  bottom: 1.25rem;
+}
+
+.container {
+  position: relative;
+  top: 4rem;
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
+  padding: 0 2.5rem;
+}
+
+.img-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+  grid-template-areas:
+    "img-1 img-2 img-3"
+    "img-4 img-2 img-6"
+    "img-4 img-5 img-6";
+}
+
+.img-gallery a {
+  align-content: center;
+  width: 100%;
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.img-gallery a i {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  position: relative;
+  z-index: 100;
+  padding: 1rem 3rem;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0.4rem;
+  /* opacity: 0; 
+  transition: opacity 0.5s; */
+}
+.img-gallery a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.img-gallery a:hover i,
+.img-gallery a:hover::before {
+  opacity: 1;
+}
+.img-1 {
+  grid-area: img-1;
+
+  background-image: url(../images/girl1.jpg);
+}
+.img-2 {
+  grid-area: img-2;
+  min-height: 51.5rem;
+  background-image: url(../images/longcurlybraids.jpg);
+}
+.img-3 {
+  grid-area: img-3;
+  background-image: url(../images/Gallery-02-150x150.jpg);
+}
+.img-4 {
+  grid-area: img-4;
+  min-height: 51.5rem;
+  background-image: url(../images/bluebraids.jpg);
+}
+.img-5 {
+  grid-area: img-5;
+  background-image: url(../images/cut1.jpg);
+}
+.img-6 {
+  grid-area: img-6;
+  min-height: 51.5rem;
+  background-image: url(../images/braudsfine.jpg);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* @media screen and (max-width: 900px) {
+  .header {
+    min-height: 70vh;
+    bottom: 5.5rem;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  .header .image-text {
+    position: relative;
+    top: 30rem;
+  }
+  .image-text p {
+    font-size: 1.3rem;
+    bottom: 1.25rem;
+    color: black;
+    font-weight: 900;
+  }
+  .image-text a {
+    bottom: 0;
+    top: 0.625rem;
+  }
+  .overlay {
+    left: 1.875rem;
+    top: 40rem;
+    width: 20rem;
+    height: 20rem;
+  }
+  .overlay h4 {
+    font-size: 1.6rem;
+    text-align: center;
+    top: 0;
+    left: 0;
+  }
+  .overlay h3 {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    top: 0.3125rem;
+    left: 0.9375rem;
+  }
+
+  .overlay a {
+    padding: 0.625rem 1.25rem;
+    position: relative;
+    top: 0;
+    left: 3rem;
+  }
+  .section-one {
+    top: 12rem;
+  }
+  .section-two {
+    height: 37rem;
+    top: 20rem;
+  }
+  .section-two h2 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .section-two p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    bottom: 1.25rem;
+  }
+  .section-two a {
+    padding: 0.625rem 1.25rem;
+  }
+  .img-two img {
+    width: 30rem;
+    height: 25rem;
+    right: 0;
+  }
+
+  .img-two {
+    margin: 0 2%;
+    top: 5rem;
+  }
+  .text-two {
+    margin: 0 2%;
+    top: 2rem;
+  }
+  .section-three {
+    top: 25rem;
+    margin: 0 2%;
+  }
+  .flex-three {
+    top: 2rem;
+  }
+  .workers img {
+    width: 98%;
+  }
+  .caption {
+    color: rgb(46, 45, 45);
+    background-color: black;
+    width: 98%;
+    margin: 0 0.125rem;
+    right: 0;
+    bottom: 3rem;
+  }
+
+  .caption h4 {
+    color: rgb(245, 6, 65);
+    font-size: 1.7rem;
+    position: relative;
+    top: 1rem;
+  }
+  .caption span {
+    bottom: 0.3125rem;
+  }
+
+  .promo {
+    height: 21.875rem;
+    margin: 0 3%;
+    top: 27rem;
+    left: 3rem;
+  }
+  .color-promo {
+    left: 0;
+  }
+  .img-promo img {
+    width: 40%;
+    height: 21.5625rem;
+    left: 37rem;
+    bottom: 10.625rem;
+  }
+  .color-promo h2,
+  .color-promo h3,
+  .color-promo a {
+    top: 5rem;
+    left: 2rem;
+  }
+  .color-promo h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(32, 135, 176);
+  }
+  .color-promo h2 {
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+  }
+  .color-promo a {
+    position: relative;
+    top: 5.625rem;
+    text-decoration: none;
+
+    padding: 0.875rem 1.5625rem;
+  }
+}
+/**************** SMALLER SCREEN ***********/
+@media screen and (max-width: 400px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 1rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .header {
+    min-height: 60vh;
+    bottom: 1.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .header .image-text {
+    top: 22rem;
+  }
+  .image-text p {
+    font-size: 1.2rem;
+    bottom: 1.25rem;
+    color: black;
+    font-weight: 600;
+  }
+  .image-text a {
+    bottom: 0;
+    top: 0.625rem;
+    padding: 1rem 1.8rem;
+  }
+  .overlay {
+    display: none;
+    /*left: 1.875rem;
+    top: 40rem;
+    width: 20rem;
+    height: 20rem;*/
+  }
+
+  /* .overlay h4 {
+    font-size: 1.6rem;
+    text-align: center;
+    top: 0;
+    left: 0;
+  }
+  .overlay h3 {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    top: 0.3125rem;
+    left: 0.9375rem;
+  }
+
+  .overlay a {
+    padding: 0.625rem 1.25rem;
+    position: relative;
+    top: 0;
+    left: 3rem;
+  } */
+  .section-one {
+    flex-direction: column;
+    top: 3rem;
+  }
+  .section-one section {
+    flex-basis: 100%;
+    word-wrap: no wrap;
+    margin: 10px auto;
+    border: 1px solid rgb(198, 194, 194);
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .section-two {
+    flex-direction: column;
+    height: 60rem;
+    top: 7rem;
+    margin: 0;
+  }
+  .section-two h2 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  .section-two p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    bottom: 1.25rem;
+  }
+  .section-two a {
+    padding: 0.625rem 1.25rem;
+  }
+  .img-two img {
+    width: 100%;
+    height: 25rem;
+    right: 0;
+  }
+
+  .img-two {
+    width: 90%;
+    margin: 0 5%;
+    top: 0rem;
+    left: 0;
+  }
+  .text-two {
+    margin: 0 5%;
+    top: -1rem;
+    left: 0;
+  }
+  .section-three {
+    top: 11rem;
+    margin: 0 2%;
+  }
+  .section-three h2 {
+    font-size: 3.5rem;
+  }
+  .flex-three {
+    flex-direction: column;
+    top: 2rem;
+  }
+  .workers img {
+    width: 100%;
+    height: 35rem;
+  }
+  .caption {
+    color: rgb(46, 45, 45);
+    background-color: black;
+    width: 98%;
+    margin: 0 0.125rem;
+    right: 0;
+    bottom: 3rem;
+  }
+
+  .caption h4 {
+    color: rgb(245, 6, 65);
+    font-size: 1.7rem;
+    position: relative;
+    top: 1rem;
+  }
+  .caption span {
+    bottom: 0.3125rem;
+  }
+  .promo {
+    flex-direction: column;
+    margin: 0 1rem;
+    top: 32rem;
+  }
+  .img-promo {
+    flex-basis: 100%;
+    margin: 7rem 0 auto;
+  }
+  .img-promo img {
+    width: 100%;
+    height: 35rem;
+  }
+  .color-promo {
+    flex-basis: 100%;
+    position: relative;
+    top: 0;
+    bottom: 10rem;
+    text-align: center;
+  }
+
+  .color-promo h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 5rem;
+  }
+  .color-promo a {
+    top: 1rem;
+    padding: 1.5rem 3.5rem;
+    font-weight: 600;
+  }
+  .gallery {
+    top: 53rem;
+  }
+  .gallery h2 {
+    font-size: 3.5rem;
+  }
+
+  .img-gallery {
+    grid-gap: 1.5rem;
+    grid-template-areas:
+      "img-1 img-1 img-1"
+      "img-2 img-2 img-2"
+      "img-3 img-3 img-3"
+      "img-4 img-4 img-4"
+      "img-5 img-5 img-5"
+      "img-6 img-6 img-6";
+  }
+
+  .img-gallery a {
+    height: 35rem;
+  }
+
+  .img-2 {
+    min-height: 25rem;
+  }
+
+  .img-4 {
+    min-height: 25rem;
+  }
+
+  .img-6 {
+    min-height: 25rem;
+  }
+}
+@media (min-width: 401px) and (max-width: 650px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 1rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .header {
+    min-height: 60vh;
+    bottom: 2rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .header .image-text {
+    top: 24rem;
+  }
+  .image-text p {
+    font-size: 1.2rem;
+    bottom: 1.25rem;
+    color: black;
+    font-weight: 600;
+  }
+  .image-text a {
+    bottom: 0;
+    top: 0.625rem;
+    padding: 1rem 1.8rem;
+  }
+  .overlay {
+    display: none;
+  }
+  .section-one {
+    flex-direction: column;
+    top: 3rem;
+  }
+  .section-one section {
+    flex-basis: 100%;
+    word-wrap: no wrap;
+    margin: 10px auto;
+    border: 1px solid rgb(198, 194, 194);
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .section-two {
+    flex-direction: column;
+    height: 60rem;
+    top: 9rem;
+    margin: 0;
+  }
+  .section-two h2 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  .section-two p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    bottom: 1.25rem;
+  }
+  .section-two a {
+    padding: 1rem 5rem;
+  }
+  .img-two img {
+    width: 100%;
+    height: 25rem;
+    right: 0;
+  }
+
+  .img-two {
+    width: 90%;
+    margin: 0 5%;
+    top: 0rem;
+    left: 0;
+  }
+  .text-two {
+    margin: 0 5%;
+    top: -1rem;
+    left: 0;
+  }
+  .section-three {
+    top: 14rem;
+    margin: 0 2%;
+  }
+  .section-three h2 {
+    font-size: 3.5rem;
+  }
+  .flex-three {
+    top: 5rem;
+    flex-wrap: wrap;
+  }
+  .flex-three .workers {
+    flex-basis: 48%;
+  }
+  .workers img {
+    width: 100%;
+  }
+  .caption {
+    color: rgb(46, 45, 45);
+    background-color: black;
+    width: 98%;
+    margin: 0 0.125rem;
+    right: 0;
+    bottom: 3rem;
+  }
+
+  .caption h4 {
+    color: rgb(245, 6, 65);
+    font-size: 1.7rem;
+    position: relative;
+    top: 1rem;
+  }
+  .caption span {
+    bottom: 0.3125rem;
+  }
+  .promo {
+    flex-direction: column;
+    margin: 0 1rem;
+    top: 40rem;
+  }
+  .img-promo {
+    flex-basis: 100%;
+    margin: 9rem 0 auto;
+  }
+  .img-promo img {
+    width: 90%;
+    height: 35rem;
+  }
+  .color-promo {
+    margin: 0 7rem;
+    flex-basis: 100%;
+    position: relative;
+    top: 0;
+    bottom: 10rem;
+  }
+
+  .color-promo h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 5rem;
+  }
+  .color-promo a {
+    top: 1rem;
+    padding: 1.5rem 3.5rem;
+    font-weight: 600;
+  }
+  .gallery {
+    top: 60rem;
+  }
+  .gallery h2 {
+    font-size: 3.5rem;
+  }
+  .img-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "img-1 img-2"
+      "img-3 img-4"
+      "img-5 img-6";
+  }
+  .img-2 {
+    min-height: 25rem;
+  }
+  .img-4 {
+    min-height: 25rem;
+  }
+
+  .img-6 {
+    min-height: 25rem;
+  }
+}
