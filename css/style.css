@@ -433,30 +433,30 @@ section > .img-icon {
 .img-1 {
   grid-area: img-1;
 
-  background-image: url(../images/braids2.jpg);
+  background-image: url(../images/img1.jpg);
 }
 .img-2 {
   grid-area: img-2;
   min-height: 51.5rem;
-  background-image: url(../images/longcurlybraids.jpg);
+  background-image: url(../images/img3.jpg);
 }
 .img-3 {
   grid-area: img-3;
-  background-image: url(../images/Gallery-02-150x150.jpg);
+  background-image: url(../images/img0.jpg);
 }
 .img-4 {
   grid-area: img-4;
   min-height: 51.5rem;
-  background-image: url(../images/bluebraids.jpg);
+  background-image: url(../images/img5.jpg);
 }
 .img-5 {
   grid-area: img-5;
-  background-image: url(../images/cut1.jpg);
+  background-image: url(../images/img4.jpg);
 }
 .img-6 {
   grid-area: img-6;
   min-height: 51.5rem;
-  background-image: url(../images/braudsfine.jpg);
+  background-image: url(../images/img2.jpg);
 }
 
 /************************FOOTER*****************/
