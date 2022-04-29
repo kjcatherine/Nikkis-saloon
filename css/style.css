@@ -26,6 +26,7 @@ html {
 }
 body {
   font-family: "Cinzel", serif;
+  position: relative;
 }
 
 /****************HEADER SECTION*****************/
@@ -95,10 +96,10 @@ body {
 .header {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../images/ayo-ogunseinde-RrD8ypt8cjY-unsplash.jpg);
+  background-image: url(../images/bg-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top 40% left;
   color: rgb(248, 17, 56);
   position: relative;
   bottom: 5.3rem;
@@ -114,8 +115,8 @@ h1 {
   top: 38rem;
 }
 .image-text p {
-  color: black;
-  font-weight: 600;
+  color: white;
+  font-weight: 500;
   font-size: 2rem;
   position: relative;
   bottom: 3.5rem;
@@ -308,40 +309,40 @@ section > .img-icon {
 /************************SECTION 4*******************/
 
 .promo {
-  display: flex;
-  justify-content: space-around;
+  position: relative;
+  top: 55rem;
+}
+
+.color-promo {
+  background-image: url("../images/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-position: top 20% right -10%;
   background-color: white;
   height: 35rem;
-  margin: 0 4rem;
+  margin-left: 4rem;
   position: relative;
-  top: 52rem;
-}
-.img-promo {
-  flex-basis: 40%;
-  position: relative;
-}
-.img-promo img {
-  width: 100%;
-  height: 35rem;
-}
-.color-promo {
-  flex-basis: 50%;
-  position: relative;
-  top: 5rem;
 }
 .color-promo h3 {
   font-size: 2.2rem;
   font-weight: 600;
   color: rgb(32, 135, 176);
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
 }
 .color-promo h2 {
   font-size: 3.5rem;
   font-weight: 500;
   letter-spacing: 2px;
   line-height: 6rem;
+  position: absolute;
+  top: 8rem;
+  left: 4rem;
 }
 .color-promo a {
   position: relative;
+  top: 28rem;
+  left: 4rem;
   text-decoration: none;
   color: black;
   border: 1px solid black;
@@ -567,12 +568,11 @@ section > .img-icon {
   .image-text p {
     font-size: 1.3rem;
     bottom: 1.25rem;
-    color: black;
     font-weight: 900;
   }
   .image-text a {
     bottom: 0;
-    top: 0.625rem;
+    top: 1rem;
   }
   .overlay {
     left: 1.875rem;
@@ -663,28 +663,20 @@ section > .img-icon {
     bottom: 0.3125rem;
   }
   .promo {
-    margin: 0;
-    top: 35rem;
+    position: relative;
+    top: 40rem;
   }
 
-  .img-promo img {
-    width: 100%;
-    height: 32rem;
-  }
+  .color-promo {
+    background-position: top 20% right -100%;
 
-  .color-promo h3 {
-    font-size: 2.2rem;
-  }
-  .color-promo h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 5rem;
-  }
-  .color-promo a {
-    top: 2rem;
+    margin-left: 1rem;
   }
   .gallery {
-    top: 40rem;
+    top: 50rem;
+  }
+  .footer {
+    top: 60rem;
   }
 }
 /**************** SMALL SCREEN ***********/
@@ -693,7 +685,7 @@ section > .img-icon {
     width: 100%;
   }
   .footer {
-    top: 60rem;
+    top: 38rem;
     padding: 30px 0;
   }
   .toggle-button {
@@ -730,7 +722,7 @@ section > .img-icon {
     font-size: 3rem;
   }
   .header .image-text {
-    top: 22rem;
+    top: 25rem;
   }
   .image-text p {
     font-size: 1.2rem;
@@ -828,39 +820,33 @@ section > .img-icon {
   .caption span {
     bottom: 0.3125rem;
   }
+
   .promo {
-    flex-direction: column;
-    margin: 0 1rem;
-    top: 32rem;
-  }
-  .img-promo {
-    flex-basis: 100%;
-    margin: 7rem 0 auto;
-  }
-  .img-promo img {
-    width: 100%;
-    height: 35rem;
-  }
-  .color-promo {
-    flex-basis: 100%;
     position: relative;
-    top: 0;
-    bottom: 10rem;
-    text-align: center;
+    top: 20rem;
   }
 
+  .color-promo {
+    background-position: top 20% right 100%;
+    margin-left: 1rem;
+  }
+  .color-promo h3 {
+    color: rgb(1, 83, 116);
+    left: 1rem;
+  }
   .color-promo h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 5rem;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    line-height: 4rem;
+    left: 1rem;
   }
   .color-promo a {
-    top: 1rem;
-    padding: 1.5rem 3.5rem;
-    font-weight: 600;
+    left: 1rem;
+    padding: 2rem 2.5rem;
   }
+
   .gallery {
-    top: 53rem;
+    top: 30rem;
   }
   .gallery h2 {
     font-size: 3.5rem;
@@ -932,7 +918,7 @@ section > .img-icon {
     font-size: 3rem;
   }
   .header .image-text {
-    top: 22rem;
+    top: 25rem;
   }
   .image-text p {
     font-size: 1.2rem;
@@ -1030,39 +1016,26 @@ section > .img-icon {
   .caption span {
     bottom: 0.3125rem;
   }
+
   .promo {
-    flex-direction: column;
-    margin: 0 1rem;
-    top: 40rem;
+    top: 30rem;
   }
-  .img-promo {
-    flex-basis: 100%;
-    margin: 9rem 0 auto;
-  }
-  .img-promo img {
-    width: 90%;
-    height: 35rem;
-  }
+
   .color-promo {
-    margin: 0 7rem;
-    flex-basis: 100%;
-    position: relative;
-    top: 0;
-    bottom: 10rem;
+    background-position: top 20% right 150%;
+    margin-left: 1rem;
   }
 
   .color-promo h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 5rem;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
   }
   .color-promo a {
-    top: 1rem;
-    padding: 1.5rem 3rem;
-    font-weight: 600;
+    padding: 2rem 3.5rem;
   }
+
   .gallery {
-    top: 65rem;
+    top: 39rem;
   }
   .gallery h2 {
     font-size: 3.5rem;
@@ -1085,7 +1058,7 @@ section > .img-icon {
     min-height: 25rem;
   }
   .footer {
-    top: 73rem;
+    top: 50rem;
     padding: 30px 0;
   }
 }
